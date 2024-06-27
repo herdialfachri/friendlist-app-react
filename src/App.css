@@ -28,11 +28,107 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.button-green {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-green:hover {
+  background-color: #45a049;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  padding: 2rem;
+  width: 90%; /* Menggunakan persentase untuk lebar */
+  max-width: 600px; /* Menyesuaikan max-width sesuai kebutuhan */
+  text-align: center;
+  margin: auto;
+}
+
+
+.friend-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Menjadikan child element berada dalam satu kolom */
+  align-items: center; /* Memposisikan ke tengah horizontal */
+  text-align: center;
+}
+
+.friend-card img {
+  border-radius: 50%;
+  margin-bottom: 1rem; /* Jarakkan gambar dengan elemen di atasnya */
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.friend-card .name {
+  font-size: 1.5rem; /* Ukuran font untuk nama */
+  margin-bottom: 0.5rem; /* Jarakkan nama dengan deskripsi di bawahnya */
+}
+
+.friend-card .description {
+  margin-bottom: 1rem; /* Jarakkan deskripsi dengan tombol di bawahnya */
+}
+
+.friend-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.friend-card button:hover {
+  background-color: #45a049;
+}
+
+.friend-detail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.friend-detail {
+  text-align: center;
 }
